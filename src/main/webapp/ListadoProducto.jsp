@@ -29,6 +29,7 @@
 	<td>Precio compra</td>
 	<td>Estado</td>
 	<td>Descripción</td>
+	<td colspan="2" align="center">Acciones</td>
 </tr>
 
 
@@ -46,6 +47,9 @@
 					<td><%=list.getPreciocompcl3()%></td>
 					<td><%=list.getEstadocl3()%></td>
 					<td><%=list.getDescripcl3()%></td>
+				
+				<td><a href="ControladorProductoCl3?accion=Modificar&idproductoscl3=<%=list.getIdproductoscl3() %>">Actualizar</a></td>				
+				<td><a href="ControladorProductoCl3?accion=Eliminar&idproductoscl3=<%=list.getIdproductoscl3() %>">Eliminar</a></td>
 				</tr>
 		<% 		
 		}//fin del bucle for
