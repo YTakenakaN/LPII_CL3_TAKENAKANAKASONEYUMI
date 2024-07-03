@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xmlns.jcp.org/xml/ns/persistence xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-
 	<persistence-unit name="LPII_CL3_TAKENAKANAKASONEYUMI">
-
-	   <!-- se vinculan las entidades que tenemos
-	   en el paquete model... -->
+		<!-- entidades que tenemos en el paquete model -->
 		<class>model.TblUsuariocl3</class>
 		<class>model.TblProductocl3</class>
 		<!-- mysql -->
-
 		<properties>
-
-		<property name="javax.persistence.jdbc.url.driver" value="com.mysql.jdbc.Driver"/>
-
+		<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
 		<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/BDtakenakanakasonecl3"/>
-
 		<property name="javax.persistence.jdbc.user" value="root"/>
-
 		<property name="javax.persistence.jdbc.password" value=""/>
-
 		<property name="javax.persistence.schema-generation.database.action" value="update"/>
-
-		</properties><!-- fin de properties -->
-
-	</persistence-unit>
-
-</persistence>
+		</properties> <!-- fin de los properties -->
+	</persistence-unit> <!-- fin de persistence unit -->
+</persistence> <!-- fin de persistence -->
